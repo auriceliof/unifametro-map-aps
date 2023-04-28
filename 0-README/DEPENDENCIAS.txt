@@ -1,0 +1,29 @@
+INTERPRETADOR
+-----------------------------------------------
+
+python 3.9
+
+-----------------------------------------------
+-----------------------------------------------
+
+
+BIBLIOTECAS UTILIZADAS NO PROJETO MONSTER
+-----------------------------------------------
+
+python.exe -m pip install --upgrade pip
+
+pip install:
+            os
+            opencv-python
+            numpy
+            joblib
+            scikit-learn
+            scipy
+            threadpoolctl
+            PIL
+            shutil
+            PyQt5
+            PyQt5-tools
+            uic
+            QtWidgets
+            rembg
