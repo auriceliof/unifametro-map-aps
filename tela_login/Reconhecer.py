@@ -30,3 +30,5 @@ for i in range(num_files):
     image = cv2.imread('{}/{}.png'.format(folder, i))
     result = recognize_monster_can(image)
     print(f'Image {i} is {result}')
+
+print("Reconhecimento realizado com sucesso!!!")

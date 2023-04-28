@@ -65,3 +65,4 @@ images = np.array(images2) / 255.0
 for i in range(num_files2):
     cv2.imwrite('{}/{}.png'.format(output_path2, i), images[i] * 255)
 
+print("Imagens normalizadas com sucesso!!!")

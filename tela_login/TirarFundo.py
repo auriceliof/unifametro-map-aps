@@ -38,3 +38,6 @@ for i in range(num_files2):
     input = Image.open(input_path)
     output = remove(input)
     output.save(output_path)
+
+
+print("Removido os fundos das imagens com sucesso!!!")
