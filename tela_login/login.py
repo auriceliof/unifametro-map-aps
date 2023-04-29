@@ -25,7 +25,7 @@ def CriarModelo():
     exec(open("CriarModelo.py").read())
 
 def Reconhecer():
-    exec(open("Reconhecer.py").read())
+    (__import__("Reconhecer"))
 
 app=QtWidgets.QApplication([])
 primeira_tela = uic.loadUi("primeira_tela.ui")

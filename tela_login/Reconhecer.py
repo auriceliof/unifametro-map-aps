@@ -17,7 +17,10 @@ def extract_features(image):
     color_hist = cv2.normalize(color_hist, color_hist).flatten()
     return color_hist
 
+
+########################################################################
 # Integrar classificador em um programa de visão computacional
+
 def recognize_monster_can(image):
     features = extract_features(image)
     prediction = clf.predict([features])
