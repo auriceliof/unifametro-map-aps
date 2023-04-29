@@ -19,8 +19,8 @@ num_files1 = len(os.listdir(folder1))
 num_files2 = len(os.listdir(folder2))
 
 output_path = f"{folder_mix}"
-# shutil.rmtree(folder_mix, ignore_errors=True)
-# os.mkdir(folder_mix)
+shutil.rmtree(folder_mix, ignore_errors=True)
+os.mkdir(folder_mix)
 
 ###############################################
 
@@ -32,8 +32,8 @@ for i in range(num_files1):
     output_path = f"{folder_mix}/{i}.png"
 
     input = Image.open(input_path)
-    # output = remove(input)
-    # output.save(output_path)
+    output = remove(input)
+    output.save(output_path)
 
     image = cv2.imread(input_path)
 
@@ -47,8 +47,8 @@ for i in range(num_files2):
     output_path = f"{folder_mix}/{num_files1 + i}.png"
 
     input = Image.open(input_path)
-    # output = remove(input)
-    # output.save(output_path)
+    output = remove(input)
+    output.save(output_path)
 
     image = cv2.imread(input_path)
 
