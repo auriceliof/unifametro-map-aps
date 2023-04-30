@@ -11,6 +11,9 @@ def chama_segunda_tela():
     else:
         primeira_tela.label_4.setText("Dados de login incorretos!")
 
+def run():
+    Result.wResult.setText("TEST")
+
 def logout():
     segunda_tela.close()
     Result.close()
@@ -28,6 +31,7 @@ def CriarModelo():
 def Reconhecer():
     (__import__("Reconhecer"))
     (Result.show())
+    (Result.label_2.setText("Reconhecer"))
 
 app=QtWidgets.QApplication([])
 primeira_tela = uic.loadUi("primeira_tela.ui")
