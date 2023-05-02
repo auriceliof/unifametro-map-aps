@@ -46,6 +46,7 @@ segunda_tela.pushButton.clicked.connect(TirarFundo)
 segunda_tela.pushButton_2.clicked.connect(Normalizar)
 segunda_tela.pushButton_3.clicked.connect(CriarModelo)
 segunda_tela.pushButton_4.clicked.connect(Reconhecer)
+segunda_tela.pushButton_5.clicked.connect(logout)
 
 primeira_tela.lineEdit_2.setEchoMode(QtWidgets.QLineEdit.Password)
 
