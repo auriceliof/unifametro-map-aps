@@ -5,7 +5,13 @@ def chama_segunda_tela():
     primeira_tela.label_4.setText("")
     nome_usuario = primeira_tela.lineEdit.text()
     senha = primeira_tela.lineEdit_2.text()
-    if nome_usuario == "auricelio" and senha == "123":
+    usuario1 = "auricelio"
+    usuario2 = "marcos"
+    usuario3 = "paulo"
+    passwd = "123"
+    if nome_usuario == usuario1 and senha == passwd \
+            or nome_usuario == usuario2 and senha == passwd \
+            or nome_usuario == usuario3 and senha == passwd:
         primeira_tela.close()
         logado = nome_usuario
         segunda_tela.label_2.setText(logado)
@@ -31,10 +37,14 @@ def CriarModelo():
     exec(open("CriarModelo.py").read())
 
 def Reconhecer():
-    (__import__("Reconhecer"))
+    reconhecer = (__import__("Reconhecer"))
     (Result.show())
     (Result.label_2.setText("Reconhecer"))
-    (Result.label_3.print(Reconhecer))
+#    Result.tableWidget.setRowCount(0)
+#    for linha, dados in enumerate(reconhecer):
+#        Result.tableWidget.setRowCount(linha)
+#        for coluna_n, dados in enumerate(dados):
+#            Result.tableWidget.setItem(linha,coluna_n(str(dados)))
 
 app=QtWidgets.QApplication([])
 primeira_tela = uic.loadUi("primeira_tela.ui")
