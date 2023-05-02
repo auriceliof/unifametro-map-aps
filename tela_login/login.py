@@ -7,6 +7,8 @@ def chama_segunda_tela():
     senha = primeira_tela.lineEdit_2.text()
     if nome_usuario == "auricelio" and senha == "123":
         primeira_tela.close()
+        logado = nome_usuario
+        segunda_tela.label_2.setText(logado)
         segunda_tela.show()
     else:
         primeira_tela.label_4.setText("Dados de login incorretos!")
@@ -32,6 +34,7 @@ def Reconhecer():
     (__import__("Reconhecer"))
     (Result.show())
     (Result.label_2.setText("Reconhecer"))
+    (Result.label_3.print(Reconhecer))
 
 app=QtWidgets.QApplication([])
 primeira_tela = uic.loadUi("primeira_tela.ui")
@@ -46,6 +49,6 @@ segunda_tela.pushButton_4.clicked.connect(Reconhecer)
 
 primeira_tela.lineEdit_2.setEchoMode(QtWidgets.QLineEdit.Password)
 
-segunda_tela.show()
+primeira_tela.show()
 app.exec()
 
